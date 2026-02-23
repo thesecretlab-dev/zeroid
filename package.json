@@ -1,0 +1,22 @@
+{
+  "name": "zeroid",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ZeroID — Zero-Knowledge Identity Infrastructure by thesecretlab",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "server:dev": "npm run dev --workspace=@zeroid/server",
+    "server:start": "npm run start --workspace=@zeroid/server"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "packageManager": "npm@10.0.0",
+  "author": "thesecretlab",
+  "license": "MIT"
+}

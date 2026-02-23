@@ -1,0 +1,29 @@
+{
+  "name": "@zeroid/sdk",
+  "version": "0.1.0",
+  "description": "ZeroID SDK — Zero-Knowledge KYC client library by thesecretlab",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "snarkjs": "^0.7.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/snarkjs": "^0.7.0"
+  },
+  "files": ["dist"],
+  "license": "MIT",
+  "author": "thesecretlab"
+}
